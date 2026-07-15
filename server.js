@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 app.use(cors());
@@ -11,7 +13,7 @@ app.post("/suggest", async (req, res) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer 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"
+      "Authorization": `Bearer ${process.env.GROQ_API_KEY}`
     },
     body: JSON.stringify({
       model: "llama-3.1-8b-instant",
