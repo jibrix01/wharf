@@ -80,7 +80,7 @@ walkr/
 Clone the repository.
 
 ```bash
-git clone https://github.com/jibrix01/walkr.git
+git clone https://github.com/jibrix01/wharf.git
 cd walkr
 ```
 
